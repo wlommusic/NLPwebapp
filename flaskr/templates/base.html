@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--Project css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/mystyle.css">
+
+<!--Website icon-->
+<link rel="shortcut icon" type="image/png" href="../static/web-link.png">
+
+
+<!--Website title-->
+<head>
+    <title>Sentiment Analysis</title>
+</head>
+
+<!--Website header with mail, github and linkedin link-->
+<header>
+    <a style="padding:0 0.5rem" href="mailto:diptapanda7@gmail.com"><img
+            src="../static/email.png""></a>
+    <a style="padding:0 0.5rem" href="https://github.com/wlommusic" target="_blank"><img
+            src="../static/github.png"></a>
+    <a style="padding:0 0.5rem" href="https://www.linkedin.com/in/dipta-panda/" target="_blank"><img
+            src="../static/linkedin.png"></a>
+</header>
+
+<body>
+
+<!--Website content-->
+<div class="content">
+    
+    <!--
+    1. Split into 3 columns
+    2. 1st and 3rd column will be the positive and negative gif
+    3. 2nd column will be the headings
+    -->
+    <div class="row">
+        <div class="column">
+            <img src="../static/giphy.gif" class="image">
+        </div>
+        <div class="column">
+            <h1>Sentiment Analysis Web Application</h1>
+            <h2>Using Flask</h2>
+        </div>
+        <div class="column rotate">
+            <img src="../static/giphy.gif" class="image">
+        </div>
+    </div>
+
+    <!--Add a horizontal line in between-->
+    <hr>
+
+    <!--h3 to ask user to input message-->
+    <h3>Input your message to get its sentiment</h3>
+
+    <!--
+    1. Create a form with text input and submit button
+    2. Obtain the input message and pass it into the code
+    -->
+    <form method="post">
+        <table width="100%" >
+            <tr>
+                <td width="85%"><input type="text" name="message" style="background-color: grey; color: white" id="message" required></td>
+                <td width="15%">
+                    <button>SUBMIT</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!--Add two line breaks between the input and output-->
+    <br>
+    <br>
+
+    <!--Block content for the output, a result html will inherit this base html-->
+    {% block content %}
+    {% endblock %}
+
+    <!--Add two line breaks between the output and footer-->
+    <br>
+    <br>
+</div>
+
+<!--Website footer-->
+<footer>
+    <hr>
+<p>Made with <i class="fa fa-heart pulse" aria-hidden="true"></i> in <a href="https://github.com/wlommusic" target="_blank">India</a></p>
+</footer>
+</body>
