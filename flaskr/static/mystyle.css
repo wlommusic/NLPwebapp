@@ -1,12 +1,11 @@
 /* Import special font */
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
 
 /* Overall font, background color and padding */
 html {
-    font-family: 'Roboto', sans-serif;
-    background: #414141;
+    font-family: 'Open Sans', sans-serif;
+    background: #eee;
     padding: 1rem;
     height: 100%;
 }
@@ -32,21 +31,17 @@ html {
 .column {
     flex: 50%;
 }
-.rotate{
-    -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
+
 
 /* Align h1 to center and change its color */
 h1 {
-    color: dodgerblue;
+    color: #054ce6;
     text-align: center;
 }
 
 
 /* Align h2 to center */
 h2 {
-    color: dodgerblue;
     text-align: center;
 }
 
@@ -83,7 +78,7 @@ input[type=text] {
     text-align: left;
     padding: 2% 3%;
     box-sizing: border-box;
-    border: solid whitesmoke;
+    border: solid transparent;
     outline: none;
 }
 
@@ -92,9 +87,9 @@ input[type=text] {
 button {
     margin: auto;
     font-size: 1em;
-    background-color: whitesmoke;
+    background-color: #FCCA03;
     border: none;
-    color: #414141;
+    color: white;
     padding: 1em 2em;
     text-align: center;
     text-decoration: none;
@@ -151,40 +146,4 @@ blockquote:after {
 
 .Negative {
     background: #f51848; /* Set the background as red if negative sentiment */
-}
-footer{
-    bottom: 0;
-}
-p {
-  color: #666;
-  font-size: 12px;
-  display: block;
-  position: absolute;
-  width: 90%;
-  left: 50%;
-  right: auto;
-  transform: translateX(-50%) translateY(-50%);
-  text-align: center;
-}
-p a {
-  color: #000000;
-  text-decoration: none;
-}
-p .fa {
-  color: #E90606;
-  margin: 0 3px;
-  font-size: 10px;
-  animation: pound 0.35s infinite alternate;
-  -webkit-animation: pound 0.35s infinite alternate;
-}
-
-@-webkit-keyframes pound {
-  to {
-    transform: scale(1.1);
-  }
-}
-@keyframes pound {
-  to {
-    transform: scale(1.1);
-  }
 }
